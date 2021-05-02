@@ -11,9 +11,10 @@ h1 {
   font-size: 3.5rem;
   line-height: 1.2;
 }
+
 h2 {
   font-family: 'Montserrat-Bold', sans-serif;
-  font-size: 3rem;
+  font-size: 2.5rem;
   line-height: 1.2;
 }
 /* Navigation bar */
@@ -36,8 +37,21 @@ font-size: 1.3rem;
 }
 .iphone {
   transform: rotate(25deg);
-  width: 60%;
-
+  right: 22%;
+  position: absolute;
+  width: 25%;
+}
+@media (max-width: 991px) {
+  h1 {
+    font-size : 4.5rem;
+  }
+  .iphone {
+    position: static;
+    transform: rotate(0deg);
+  }
+  #title {
+    text-align: center;
+  }
 }
 
 /* Download Buttons */
@@ -49,7 +63,9 @@ font-size: 1.3rem;
 /* Section Feautures */
 
 #features {
+  background-color: #fff;
   padding: 3% 15%;
+  position: relative;
 }
 h3 {
   font-family: 'Montserrat-Black', sans-serif;
@@ -103,4 +119,32 @@ p {
 }
 #pricing {
   padding: 5% 15%;
+
+}
+
+.pricing-column {
+  padding: 2% 3%;
+}
+
+#cta {
+  background-color: #fd3f26;
+  color: #fff;
+  text-align: center;
+  padding: 2% 3%;
+}
+
+#footer {
+  background-color: #fff;
+  text-align: center;
+  padding: 5% 3%;
+}
+.social-icon {
+  padding-bottom: 4%;
+}
+.logo{
+  margin-right: 15px;
+  color: black;
+}
+.logo:hover {
+  color:#ff280b;
 }
